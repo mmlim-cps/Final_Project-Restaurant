@@ -17,11 +17,6 @@
 .navBreak{
     height:42px;
 }
-.cItem{
-    height:34rem; 
-    width:auto; 
-    object-fit:cover;
-}
 #cShrimp{
     object-position: 0% -10px;
 }
