@@ -9,7 +9,12 @@
     width:100%;
     position:fixed;
     left:0px;
+    z-index:20;
 }
 .nav-link{
     color:white;
+}
+.carousel-item{
+    height:300px;
+    object-fit:contain;
 }
