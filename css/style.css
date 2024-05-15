@@ -15,5 +15,14 @@
     color:white;
 }
 .navBreak{
-    height:42px;
+    height:84px;
+}
+#cShrimp{
+    object-position: 0% 45%;
+}
+#cSpring{
+    object-position: 0% 60%;
+}
+#cBeef{
+    object-position: 0% 45%;
 }
