@@ -17,3 +17,14 @@
 .navBreak{
     height:100px;
 }
+.div{
+    background-color:rgb(231, 231, 231);
+    border:solid 2px grey;
+}
+body{
+    position:absolute;
+}
+footer{
+    position:absolute;
+    bottom:0px;
+}
