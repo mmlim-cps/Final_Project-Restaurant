@@ -33,6 +33,7 @@ footer{
     height: 200px;
 }
 .nav-link:hover{
-    border:white solid 3px;
+    border:white solid 2px;
+    color:#FCC532;
     border-radius:50px;
 }
