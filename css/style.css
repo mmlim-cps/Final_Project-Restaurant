@@ -26,3 +26,8 @@ footer{
     position:absolute;
     bottom:0px;
 }
+.cImg{
+    height:34 rem;
+    width:100svh;
+    object-fit:cover;
+}
