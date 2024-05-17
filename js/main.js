@@ -44,7 +44,7 @@ const icon1  = icon[0];
 const icon2  = icon[1];
 const icon3  = icon[2];
 window.onscroll  = function(){
-    if(document.body.scrollTop>=10||document.documentElement.scrollTop>=10){
+    if(document.body.scrollTop>=30||document.documentElement.scrollTop>=30){
         nav.classList.add("nav-transparent");
         nav.classList.remove("nav-colored");
         icon1.src = "media/logo-sml.png";

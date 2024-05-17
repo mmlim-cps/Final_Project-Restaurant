@@ -18,8 +18,8 @@
     height:100px;
 }
 body{
-    min-width:100%;
-    min-height:100%;
+    min-width:100svh;
+    min-height:100svh;
     position:absolute;
 }
 footer{
