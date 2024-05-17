@@ -38,12 +38,12 @@ var restaurant  = {
         return this.smoothies[randomizer.nextInt(0, this.smoothies.length-1)];
     }, 
 }
-const nav  = document.getElementById("nav");
-const icon  = document.getElementsByClassName("brand");
-const icon1  = icon[0];
-const icon2  = icon[1];
-const icon3  = icon[2];
-window.onscroll  = function(){
+const nav = document.getElementById("nav");
+const icon = document.getElementsByClassName("brand");
+const icon1 = icon[0];
+const icon2 = icon[1];
+const icon3 = icon[2];
+window.onscroll = function(){
     if(document.body.scrollTop>=30||document.documentElement.scrollTop>=30){
         nav.classList.add("nav-transparent");
         nav.classList.remove("nav-colored");
