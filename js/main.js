@@ -47,13 +47,14 @@ window.onscroll = function(){
     if(document.body.scrollTop>=30||document.documentElement.scrollTop>=30){
         nav.classList.add("nav-transparent");
         nav.classList.remove("nav-colored");
-        icon1.src = "media/logo-sml.png";
-        icon2.src = "media/logo-sml.png";
-        icon3.src = "media/logo-sml.png";
+        icon1.src = icon1.src.replace("media/logo-big.png","media/logo-sml.png");
+        icon2.src = icon2.src.replace("media/logo-big.png","media/logo-sml.png");
+        icon3.src = icon3.src.replace("media/logo-big.png","media/logo-sml.png");
+        //icon2.src = "media/logo-sml.png";
     }
     else{
         nav.classList.remove("nav-transparent");
         nav.classList.add("nav-colored");
-        icon1.src = "media/logo-big.png", icon2.src = "media/logo-big.png", icon3.src = "media/logo-big.png";
+        icon1.src = icon1.src.replace("media/logo-sml.png","media/logo-big.png"), icon2.src = icon2.src.replace("media/logo-sml.png","media/logo-big.png"), icon3.src = icon3.src.replace("media/logo-sml.png","media/logo-big.png");
     }
 }

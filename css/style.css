@@ -40,3 +40,6 @@ footer{
 .box{
     background-color:grey;
 }
+img{
+    object-fit:cover;
+}
