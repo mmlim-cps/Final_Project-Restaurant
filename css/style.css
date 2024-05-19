@@ -19,11 +19,12 @@
 }
 body{
     position:relative;
+    max-width:fit-content;
 }
 body::after {
     content: '';
     display: block;
-    height: 200px;
+    height: 210px;
 }
 footer{
     position:absolute;
