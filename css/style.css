@@ -19,7 +19,7 @@
 }
 body{
     position:relative;
-    max-width:fit-content;
+    width:1176;
 }
 body::after {
     content: '';
@@ -46,7 +46,12 @@ img{
 }
 .gal3{
     height:223px;
+    width:320;
 }
 .gal4{
     height:163px;
+    width:240;
+}
+.active{
+    color:#FCC532;;
 }
