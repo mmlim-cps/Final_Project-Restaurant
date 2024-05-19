@@ -19,7 +19,6 @@
 }
 body{
     position:relative;
-    width:1176;
 }
 body::after {
     content: '';
@@ -54,4 +53,7 @@ img{
 }
 .active{
     color:#FCC532;;
+}
+div{
+    max-width:1176;
 }
