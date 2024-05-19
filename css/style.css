@@ -23,6 +23,7 @@ body{
 body::after {
     content: '';
     display: block;
+    width:90%;
     height: 210px;
 }
 footer{
