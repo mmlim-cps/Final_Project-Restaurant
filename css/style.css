@@ -46,10 +46,12 @@ img{
 .gal3{
     height:223px;
     width:320;
+    object-fit:cover;
 }
 .gal4{
     height:163px;
     width:240;
+    object-fit:cover;
 }
 .activen{
     color:#FCC532 !important;
