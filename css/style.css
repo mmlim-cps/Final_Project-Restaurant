@@ -1,9 +1,9 @@
 .nav-transparent{
-    background-color:rgb(56,29,42,0.6);
+    background-color:rgb(56,28,19,0.6);
     color:white;
 }
 .nav-colored{
-    background-color:#381D2A;
+    background-color:#381c13;
 }
 #nav{
     width:100%;
@@ -72,9 +72,7 @@ img{
     background-color: #D10D1D;
 }
 .textbox{
-    position:absolute;
-    top:50%;
-    left:50%;
+    margin: auto;
 }
 #abouttext{
     text-indent:50px;
