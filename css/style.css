@@ -44,15 +44,15 @@ img{
     object-fit:cover;
 }
 .gal3{
-    height:223px;
-    width:320;
+    height:18rem;
+    width:28rem;
     object-fit:cover;
 }
 .gal4{
-    height:163px;
-    width:240;
+    height:13rem;
+    width:21.25rem;
     object-fit:cover;
 }
-.activen{
+#activen{
     color:#FCC532 !important;
 }
