@@ -1,9 +1,9 @@
 .nav-transparent{
-    background-color:rgb(0,0,0,0.6);
+    background-color:rgb(56,29,42,0.6);
     color:white;
 }
 .nav-colored{
-    background-color:black;
+    background-color:#381D2A;
 }
 #nav{
     width:100%;
@@ -37,9 +37,6 @@ footer{
     color:#FCC532;
     border-radius:50px;
 }
-.box{
-    background-color:grey;
-}
 img{
     object-fit:cover;
 }
@@ -53,6 +50,37 @@ img{
     width:21.25rem;
     object-fit:cover;
 }
-#activen{
-    color:#FCC532 !important;
+#indexoc{
+    object-position:50% 70%;
+}
+#activen,#activen2{
+    color:#FCC532;
+}
+#activen1{
+    color:#FF9505
+}
+#abbout{
+    position:absolute;
+    background-color: #FCC532;
+}
+#orderbow{
+    position:absolute;
+    background-color: #FF9505;
+}
+#galleby{
+    position:absolute;
+    background-color: #D10D1D;
+}
+.textbox{
+    position:absolute;
+    top:50em;
+    left:50em;
+}
+#abouttext{
+    text-indent:50px;
+    font-size:1.4vw;
+}
+#aboutimg{
+    height:100em;
+    width:50em;
 }
