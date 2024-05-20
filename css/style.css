@@ -60,27 +60,23 @@ img{
     color:#FF9505
 }
 #abbout{
-    position:absolute;
+    position:relative;
     background-color: #FCC532;
 }
 #orderbow{
-    position:absolute;
+    position:relative;
     background-color: #FF9505;
 }
 #galleby{
-    position:absolute;
+    position:relative;
     background-color: #D10D1D;
 }
 .textbox{
     position:absolute;
-    top:50em;
-    left:50em;
+    top:50%;
+    left:50%;
 }
 #abouttext{
     text-indent:50px;
     font-size:1.4vw;
-}
-#aboutimg{
-    height:100em;
-    width:50em;
 }
