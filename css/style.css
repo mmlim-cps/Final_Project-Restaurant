@@ -72,16 +72,7 @@ img{
     background-color: #D10D1D;
 }
 .textbox{
-    position:absolute;
-    top:50%;
-    width:28rem;
-    text-align:center;
-}
-.textbox2{
-    position:absolute;
-    top:50%;
-    width:21.25rem;
-    text-align:center;
+    margin: auto;
 }
 #abouttext{
     text-indent:50px;
