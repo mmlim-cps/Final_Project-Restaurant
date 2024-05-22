@@ -28,7 +28,7 @@ body::after {
 footer{
     position:absolute;
     bottom:0px;
-    background-color:#381c13;
+    border-top:#381c13 double 3px;
     width:90%;
     height: 200px;
 }
@@ -82,5 +82,5 @@ img{
 }
 .reviewbg{
     background-color:#D10D1D;
-    height:34rem;
+    height:15rem;
 }
