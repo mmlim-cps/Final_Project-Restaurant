@@ -58,3 +58,11 @@ window.onscroll = function(){
         icon1.src = icon1.src.replace("media/logo-sml.png","media/logo-big.png"), icon2.src = icon2.src.replace("media/logo-sml.png","media/logo-big.png"), icon3.src = icon3.src.replace("media/logo-sml.png","media/logo-big.png");
     }
 }
+const mealprep=document.getElementById("mealPrep");
+const para=document.createElement(div);
+function appadd(){
+    var appdiv = mealprep.appendChild(para);
+    var appetif = restaurant.ranAppe();
+    appdiv.innerHTML = appetif;
+    appdiv.classList.add(mealprepdiv,col-sm)
+}
