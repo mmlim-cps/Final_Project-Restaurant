@@ -93,7 +93,7 @@ function appadd(){
 function appadd(){
     var appdiv = document.createElement("div")
     var appetif = restaurant.ranAppe();
-    appdiv.textContent(appetif);
+    appdiv.textContent=appetif;
     mealprep.appendChild(appdiv);
     appdiv.classList.add("col-sm","mealprepdiv");
 }
