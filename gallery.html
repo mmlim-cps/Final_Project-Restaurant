@@ -154,29 +154,46 @@
           </div>
           <!--More rows to be added with photos, depending on how many photos I'll have -->
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-12">
+              <h2>Random Meal Maker</h2>
+            </div> 
+          </div>
+          <div class="row" id="mealPrep">
+            <div class="col-sm-3" id="appetttttt">
+              <h3>Appetizer</h3>
+              <br>
               <button type="button" class="btn btn-primary" onclick="appadd()">Appetizer</button>
-              <br>
-              <button type="button" class="btn btn-primary" onclick="entadd()">Entree</button>
-              <br>
-              <button type="button" class="btn btn-primary" onclick="friadd()">Fried Rice</button>
-              <br>
-              <button type="button" class="btn btn-primary" onclick="vsadd()">Vermicelli Noodle Salad</button>
-              <br>
-              <button type="button" class="btn btn-primary" onclick="sfnadd()">Stirfried Noodles</button>
-              <br>
-              <button type="button" class="btn btn-primary" onclick="seanadd()">South East Asian Noodle Soup</button>
-              <br>
-              <button type="button" class="btn btn-primary" onclick="lbadd()">Lunchbox</button>
+            </div>
+            <div class="col-sm-4" id="entreeeeee">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="inlinee">
+                    <h3>Entree</h3>
+                    <h4>Entree button ≠ ALL entrees</h4>                
+                  </div>
+                  <br>
+                  <button type="button" class="btn btn-primary" onclick="entadd()">Entree</button>
+                  <button type="button" class="btn btn-primary" onclick="friadd()">Fried Rice</button>
+                  <button type="button" class="btn btn-primary" onclick="vsadd()">Vermicelli Noodle Salad</button>
+                  <button type="button" class="btn btn-primary" onclick="sfnadd()">Stirfried Noodles</button>
+                  <button type="button" class="btn btn-primary" onclick="seanadd()">South East Asian Noodle Soup</button>  
+                </div>
+              </div>
+              <div class="row" id="entreeeeee">
+                <!--Divs are added with java script-->
+              </div>
+                          
+            </div>
+            <div class="col-md-2" id="drink">
+              <h3>Drink</h3>
               <br>
               <button type="button" class="btn btn-primary" onclick="bevadd()">Beverages</button>
-              <br>
-              <button type="button" class="btn btn-primary" onclick="smadd()">Smoothies</button>
-              <br>
-            </div>
-            <div class="row" id="mealPrep">
-              <!-- divs will be added with js in response to the buttons-->
-            </div>
+              <button type="button" class="btn btn-primary" onclick="smadd()">Smoothies</button>            
+            </div class="col-md-3" id="lunchhhhh">
+              <div class="inlinee">
+                <h3>Lunchbox</h3><h4>Includes: plain fried rice and an egg roll </h4>
+                <button type="button" class="btn btn-primary" onclick="lbadd()">Lunchbox</button> 
+              </div>
           </div>
           <footer class="row mt-4">
               <!--Footer-->

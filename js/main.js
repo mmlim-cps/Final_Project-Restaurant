@@ -70,30 +70,148 @@ window.onscroll = function(){
     if(document.body.scrollTop>=30||document.documentElement.scrollTop>=30){
         nav.classList.add("nav-transparent");
         nav.classList.remove("nav-colored");
-        icon1.src.replace("media/logo-big.png","media/logo-sml.png");
-        icon2.src.replace("media/logo-big.png","media/logo-sml.png");
-        icon3.src.replace("media/logo-big.png","media/logo-sml.png");
+        icon1.src = "media/logo-sml.png";
+        icon2.src = "media/logo-sml.png";
+        icon3.src = "media/logo-sml.png";
         //icon2.src = icon2.src.replace("media/logo-big-png", "media/logo-sml.png");
     }
     else{
         nav.classList.remove("nav-transparent");
         nav.classList.add("nav-colored");
-        icon1.src.replace("media/logo-sml.png","media/logo-big.png"), icon2.src.replace("media/logo-sml.png","media/logo-big.png"), icon3.src.replace("media/logo-sml.png","media/logo-big.png");
+        icon1.src = "media/logo-big.png", icon2.src = "media/logo-big.png", icon3.src = "media/logo-big.png";
     }
 }
-const mealprep=document.getElementById("mealPrep");
-/*
 function appadd(){
-    var appdiv = mealprep.appendChild(para);
-    var appetif = restaurant.ranAppe();
-    appdiv.innerHTML = appetif;
-    appdiv.classList.add(mealprepdiv,col-sm)
-} 
-*/
-function appadd(){
-    var appdiv = document.createElement("div")
-    var appetif = restaurant.ranAppe();
-    appdiv.textContent=appetif;
-    mealprep.appendChild(appdiv);
-    appdiv.classList.add("col-sm","mealprepdiv");
+    const appetttttt=document.getElementById("appetttttt")
+    var y = document.getElementsByClassName("appetizz");
+    if(y.length==1){
+        y.remove();
+        var appdiv = document.createElement("div");
+        var appetif = restaurant.ranAppe();
+        appdiv.textContent=appetif;
+        appetttttt.appendChild(appdiv);
+        appdiv.classList.add("mealprepdiv","appetizz");    
+    }
+    else{
+        var appdiv = document.createElement("div");
+        var appetif = restaurant.ranAppe();
+        appdiv.textContent=appetif;
+        appetttttt.appendChild(appdiv);
+        appdiv.classList.add("mealprepdiv","appetizz");  
+    }
+}
+function enadd(){
+    const entreeeeee=document.getElementById("entreeeeee");
+    var a = document.getElementsByClassName("entrevevee")
+    if(a.length==2){
+        a[0].remove , a[1].remove;
+        var endiv = document.createElement("div");
+        var entdiv = restaurant.ranEnt();
+        endiv.textContent=entdiv;
+        entreeeeee.appendChild("endiv");
+        endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
+    }
+    else{
+        var endiv = document.createElement("div");
+        var entdiv = restaurant.ranEnt();
+        endiv.textContent=entdiv;
+        entreeeeee.appendChild("endiv");
+        endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
+    }
+}
+
+function friadd(){
+    const entreeeeee=document.getElementById("entreeeeee");
+    var a = document.getElementsByClassName("entrevevee")
+    if(a.length==2){
+        a[0].remove , a[1].remove;
+        var endiv = document.createElement("div");
+        var entdiv = restaurant.ranRice();
+        endiv.textContent=entdiv;
+        entreeeeee.appendChild("endiv");
+        endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
+    }
+    else{
+        var endiv = document.createElement("div");
+        var entdiv = restaurant.ranRice();
+        endiv.textContent=entdiv;
+        entreeeeee.appendChild("endiv");
+        endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
+    }
+}
+function vsadd(){
+    const entreeeeee=document.getElementById("entreeeeee");
+    var a = document.getElementsByClassName("entrevevee")
+    if(a.length==2){
+        a[0].remove , a[1].remove;
+        var endiv = document.createElement("div");
+        var entdiv = restaurant.ranVnSa();
+        endiv.textContent=entdiv;
+        entreeeeee.appendChild("endiv");
+        endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
+    }
+    else{
+        var endiv = document.createElement("div");
+        var entdiv = restaurant.ranVnSa();
+        endiv.textContent=entdiv;
+        entreeeeee.appendChild("endiv");
+        endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
+    }
+}
+function sfnadd(){
+    const entreeeeee=document.getElementById("entreeeeee");
+    var a = document.getElementsByClassName("entrevevee")
+    if(a.length==2){
+        a[0].remove , a[1].remove;
+        var endiv = document.createElement("div");
+        var entdiv = restaurant.ranSNoodle();
+        endiv.textContent=entdiv;
+        entreeeeee.appendChild("endiv");
+        endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
+    }
+    else{
+        var endiv = document.createElement("div");
+        var entdiv = restaurant.ranSNoodle();
+        endiv.textContent=entdiv;
+        entreeeeee.appendChild("endiv");
+        endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
+    }
+}
+function seanadd(){
+    const entreeeeee=document.getElementById("entreeeeee");
+    var a = document.getElementsByClassName("entrevevee")
+    if(a.length==2){
+        a[0].remove , a[1].remove;
+        var endiv = document.createElement("div");
+        var entdiv = restaurant.ranSENS();
+        endiv.textContent=entdiv;
+        entreeeeee.appendChild("endiv");
+        endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
+    }
+    else{
+        var endiv = document.createElement("div");
+        var entdiv = restaurant.ranSENS();
+        endiv.textContent=entdiv;
+        entreeeeee.appendChild("endiv");
+        endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
+    }
+}
+function bevadd(){
+    const entreeeeee=document.getElementById("drink");
+    var a = document.getElementsByClassName("drinkik")
+    if(a.length==1){
+        a[0].remove
+        var endiv = document.createElement("div");
+        var entdiv = restaurant.ranBev;
+        endiv.textContent=entdiv;
+        entreeeeee.appendChild("endiv");
+        endiv.classList.add("drinkik", "mealprepdiv", "col-sm");
+    }
+    else{
+        var endiv = document.createElement("div");
+        var entdiv = restaurant.ranBev;
+        endiv.textContent=entdiv;
+        entreeeeee.appendChild("endiv");
+        endiv.classList.add("drinkik", "mealprepdiv", "col-sm");
+    }
 }
