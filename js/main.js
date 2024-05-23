@@ -59,7 +59,7 @@ window.onscroll = function(){
     }
 }
 const mealprep=document.getElementById("mealPrep");
-const para=document.createElement(div);
+const para=document.createElement("div");
 /*
 function appadd(){
     var appdiv = mealprep.appendChild(para);
@@ -71,8 +71,7 @@ function appadd(){
 function appadd(){
     var appdiv = para
     var appetif = restaurant.ranAppe();
-    appdiv.innerHTML = appetif;
+    appdiv.appendchild(appetif);
     mealprep.appendChild(appdiv);
-    appdiv.classList.add(col-sm);
-    appdiv.classList.add(mealprepdiv);
+    appdiv.classList.add("col-sm","mealprepdiv");
 }
