@@ -9,33 +9,52 @@ var restaurant  = {
     lunchbox : ["Hunan Chickan", " Kung Pao Chicken", "Chicken Broccoli", "Sweet & Sour Chicken", "Spicy Chicken", "Shrimp Egg Foo Young", "Beef Broccoli", "Vegetable Delight", "Orange Chicken", "Chicken Lo Mein", "Shrimp Singapore Noodle", "Chicken Pad Thai", "Shrimp Noodle Soup", "Ribeye Noodle Soup", "Fish & Meatball Soup"], 
     beverages : ["Soda", "Jarritos", "Jasmine Tea", "Green Tea", "Honey Ginseng Tea", "Hot Ginger Tea", "Iced Tea", "Hot Hong Kong Milk Tea", "Lemonade", "Strawberry Lemonade", "Green Tea w/Tapioca", "Thai Ice Tea", "Thai Ice Coffee", "Horchata", "Ice Milk Tea", "Taro Milk Tea", "Coconut Milk Tea", "Strawberry Milk Tea", "Mango Milk Tea", ], 
     smoothies : ["Mango & Cocounut", "Strawberry & Banana", "Blueberry", "Jack Fruit", "Lychee", "Peach & Mango", "Taro", "Red Bean & Coconut", "Lemon", "Pina Colada", "Mixed Berry", "Kiwi Fruit", "Strawberry", "Avocado", "Coconut", "Kiwi & Strawberry", "Papaya", "Pineappple & Mango", "Cantaloupe", "Watermelon", "Tropical", "Rainbow Jelly & Coconut", "Mango", "Banana", "Strawberry Mango", "Lemon"], 
-//randomizer.nextInt(min, max)
     ranAppe : function(){
-        return this.appetizers[randomizer.nextInt(0, this.appetizer.length-1)];
+        var maxInt = this.appetizers.length-1;
+        var randomInteger = Math.floor(Math.random() * (maxInt - 0 + 1) + 0);
+        return this.appetizers[randomInteger];
     }, 
     ranEnt : function(){
-        return this.entrees[randomizer.nextInt(0, this.entrees.length-1)];
+        var maxInt = this.entrees.length-1;
+        var randomInteger = Math.floor(Math.random() * (maxInt - 0 + 1) + 0);
+        return this.entrees[randomInteger];
     }, 
     ranRice : function(){
-        return this.friedRice[randomizer.nextInt(0, this.friedRice.length-1)];
+        var maxInt = this.friedRice.length-1;
+        var randomInteger = Math.floor(Math.random() * (maxInt - 0 + 1) + 0);
+        return this.friedRice[randomInteger];
     }, 
     ranSNoodle : function(){
-        return [this.stirFriedNoodle[randomizer.nextInt(0, this.stirFriedNoodle.length-1)], this.stirFriedNoodleAdd[randomizer.nextInt(0, this.stirFriedNoodleAdd.length-1)]];
+        var maxInt = this.stirFriedNoodle.length-1;
+        var maxInt2= this.stirFriedNoodleAdd.length-1
+        var randomInteger = Math.floor(Math.random() * (maxInt - 0 + 1) + 0);
+        var randomInteger2 = Math.floor(Math.random()*(maxInt2 - 0 + 1)+ 0)
+        return [this.stirFriedNoodle[randomInteger], this.stirFriedNoodleAdd[randomInteger2]];
     }, 
     ranSENS : function(){
-        return this.sEasNoodleSoup[randomizer.nextInt(0, this.sEasNoodleSoup.length-1)];
+        var maxInt = this.sEAsNoodleSoup.length-1;
+        var randomInteger = Math.floor(Math.random() * (maxInt - 0 + 1) + 0);
+        return this.sEasNoodleSoup[randomInteger];
     }, 
     ranVnSa : function(){
-        return this.vNoodleSalad[randomizer.nextInt(0, this.vNoodleSalad.length-1)];
+        var maxInt = this.vNoodleSalad.length-1;
+        var randomInteger = Math.floor(Math.random() * (maxInt - 0 + 1) + 0);
+        return this.vNoodleSalad[randomInteger];
     }, 
     ranLunch : function(){
-        return this.lunchbox[randomizer.nextInt(0, this.lunchbox.length-1)];
+        var maxInt = this.lunchbox.length-1;
+        var randomInteger = Math.floor(Math.random() * (maxInt - 0 + 1) + 0);
+        return this.lunchbox[randomInteger];
     }, 
     ranBev : function(){
-        return this.beverages[randomizer.nextInt(0, this.beverages.length-1)];
+        var maxInt = this.beverages.length-1;
+        var randomInteger = Math.floor(Math.random() * (maxInt - 0 + 1) + 0);
+        return this.beverages[randomInteger];
     }, 
     ranSmoo : function(){
-        return this.smoothies[randomizer.nextInt(0, this.smoothies.length-1)];
+        var maxInt = this.smoothies.length-1;
+        var randomInteger = Math.floor(Math.random() * (maxInt - 0 + 1) + 0);
+        return this.smoothies[randomInteger];
     }, 
 }
 const nav = document.getElementById("nav");
@@ -59,7 +78,6 @@ window.onscroll = function(){
     }
 }
 const mealprep=document.getElementById("mealPrep");
-const para=document.createElement("div");
 /*
 function appadd(){
     var appdiv = mealprep.appendChild(para);
@@ -69,7 +87,7 @@ function appadd(){
 } 
 */
 function appadd(){
-    var appdiv = para
+    var appdiv = document.createElement("div")
     var appetif = restaurant.ranAppe();
     appdiv.appendchild(appetif);
     mealprep.appendChild(appdiv);
