@@ -1,3 +1,7 @@
+function randomizer(minInt, maxInt){
+    var x = Math.floor(Math.random() * (maxInt - minInt + 1) + minInt);
+    return(x);
+}
 var restaurant  = {
     appetizers : ["Egg Rolls", "Shrimp Spring Rolls",  "Spring Rolls Tofu", "Vegetable Pot Stickers", "Crab Rangoon", "French Fries", "Chicken Fingers", "Fried Shrimp", "Fried Tofu", "Original(chicken) Wing", "Tamarind Chicken Wings", "BBQ pork"], 
     entrees : ["Hunan Chicken", "Hunan Beef", "Hunan Shrimp", "Hunan Tofu", "Kung Pao Chicken", "Kung Pao Beef", "Kung Pao Combo", "Kung Pao Shrimp", "Chicken Broccoli", "Beef Broccoli", "Shrimp Broccoli", "Lemongrass Basil Chicken", "Lemongrass Basil combo", "Lemongrass Basil Shrimp", "Lemongrass Basil Beef", "Chicken Egg Foo Young", "Beef Egg Foo Young", "Ham Egg Foo Young", "Shrimp Egg Foo Young", "Salt and Pepper Shrimp", "Salt and Pepper Fish", "Spicy Chicken", "Spicy Beef", "Mongolian Beef", "Stir Friend Vegetable Tofu", "Szechwan Chicken", "Szechwan Wing", "Fire Wing", "Pepper Steak", "Orange Chicken", "Sweet & Sour Chicken", "Sesame Chicken", "General Tao's Chicken", "Vegetable Delight", "Stir Fried String Bean", "Vegetable Chop Suey", "Chinese Broccoli", "Shrimp W/ Lobster Sauce", "General Tso's (G T) Chicken", "Shrimp curry", "Beef Curry", "Chicken Curry", "Szechwan Tofu"], 
@@ -11,49 +15,49 @@ var restaurant  = {
     smoothies : ["Mango & Cocounut", "Strawberry & Banana", "Blueberry", "Jack Fruit", "Lychee", "Peach & Mango", "Taro", "Red Bean & Coconut", "Lemon", "Pina Colada", "Mixed Berry", "Kiwi Fruit", "Strawberry", "Avocado", "Coconut", "Kiwi & Strawberry", "Papaya", "Pineappple & Mango", "Cantaloupe", "Watermelon", "Tropical", "Rainbow Jelly & Coconut", "Mango", "Banana", "Strawberry Mango", "Lemon"], 
     ranAppe : function(){
         var maxInt = this.appetizers.length-1;
-        var randomInteger = Math.floor(Math.random() * (maxInt - 0 + 1) + 0);
+        var randomInteger = randomizer(0,maxInt);
         return this.appetizers[randomInteger];
     }, 
     ranEnt : function(){
         var maxInt = this.entrees.length-1;
-        var randomInteger = Math.floor(Math.random() * (maxInt - 0 + 1) + 0);
+        var randomInteger = randomizer(0,maxInt);
         return this.entrees[randomInteger];
     }, 
     ranRice : function(){
         var maxInt = this.friedRice.length-1;
-        var randomInteger = Math.floor(Math.random() * (maxInt - 0 + 1) + 0);
+        var randomInteger = randomizer(0,maxInt);
         return this.friedRice[randomInteger];
     }, 
     ranSNoodle : function(){
         var maxInt = this.stirFriedNoodle.length-1;
         var maxInt2= this.stirFriedNoodleAdd.length-1
-        var randomInteger = Math.floor(Math.random() * (maxInt - 0 + 1) + 0);
-        var randomInteger2 = Math.floor(Math.random()*(maxInt2 - 0 + 1)+ 0)
+        var randomInteger = randomizer(0,maxInt);
+        var randomInteger2 = randomizer(0,maxInt2);
         return [this.stirFriedNoodle[randomInteger], this.stirFriedNoodleAdd[randomInteger2]];
     }, 
     ranSENS : function(){
         var maxInt = this.sEAsNoodleSoup.length-1;
-        var randomInteger = Math.floor(Math.random() * (maxInt - 0 + 1) + 0);
+        var randomInteger = randomizer(0,maxInt);
         return this.sEasNoodleSoup[randomInteger];
     }, 
     ranVnSa : function(){
         var maxInt = this.vNoodleSalad.length-1;
-        var randomInteger = Math.floor(Math.random() * (maxInt - 0 + 1) + 0);
+        var randomInteger = randomizer(0,maxInt);
         return this.vNoodleSalad[randomInteger];
     }, 
     ranLunch : function(){
         var maxInt = this.lunchbox.length-1;
-        var randomInteger = Math.floor(Math.random() * (maxInt - 0 + 1) + 0);
+        var randomInteger = randomizer(0,maxInt);
         return this.lunchbox[randomInteger];
     }, 
     ranBev : function(){
         var maxInt = this.beverages.length-1;
-        var randomInteger = Math.floor(Math.random() * (maxInt - 0 + 1) + 0);
+        var randomInteger = randomizer(0,maxInt);
         return this.beverages[randomInteger];
     }, 
     ranSmoo : function(){
         var maxInt = this.smoothies.length-1;
-        var randomInteger = Math.floor(Math.random() * (maxInt - 0 + 1) + 0);
+        var randomInteger = randomizer(0,maxInt);
         return this.smoothies[randomInteger];
     }, 
 }
@@ -89,7 +93,7 @@ function appadd(){
 function appadd(){
     var appdiv = document.createElement("div")
     var appetif = restaurant.ranAppe();
-    appdiv.appendchild(appetif);
+    appdiv.appendChild(appetif);
     mealprep.appendChild(appdiv);
     appdiv.classList.add("col-sm","mealprepdiv");
 }
