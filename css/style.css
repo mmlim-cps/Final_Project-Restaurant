@@ -87,7 +87,8 @@ img{
 }
 .mealprepdiv{
     height:150px;
-    background-color:grey;
+    background-color:#7B221C;
+    color:white;
 }
 .inlinee{
     display:inline;

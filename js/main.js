@@ -86,14 +86,14 @@ function appadd(){
         var appetif = restaurant.ranAppe();
         appdiv.textContent=appetif;
         appetttttt.appendChild(appdiv);
-        appdiv.classList.add("mealprepdiv","appetizz");
+        appdiv.classList.add("mealprepdiv", "fs-4", "text-center","appetizz");
     }
     else{
         appdiv = document.createElement("div");
         appetif = restaurant.ranAppe();
         appdiv.textContent=appetif;
         appetttttt.appendChild(appdiv);
-        appdiv.classList.add("mealprepdiv","appetizz");  
+        appdiv.classList.add("mealprepdiv", "fs-4", "text-center","appetizz");  
     }
 }
 function entadd(){
@@ -105,14 +105,14 @@ function entadd(){
         var entdiv = restaurant.ranEnt();
         endiv.textContent=entdiv;
         entreeeeee.appendChild(endiv);
-        endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
+        endiv.classList.add("entrevevee", "mealprepdiv", "fs-4", "text-center", "col-sm");
     }
     else{
         endiv = document.createElement("div");
         entdiv = restaurant.ranEnt();
         endiv.textContent=entdiv;
         entreeeeee.appendChild(endiv);
-        endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
+        endiv.classList.add("entrevevee", "mealprepdiv", "fs-4", "text-center", "col-sm");
     }
 }
 function friadd(){
@@ -124,14 +124,14 @@ function friadd(){
         var entdiv = restaurant.ranRice();
         endiv.textContent=entdiv;
         entreeeeee.appendChild(endiv);
-        endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
+        endiv.classList.add("entrevevee", "mealprepdiv", "fs-4", "text-center", "col-sm");
     }
     else{
         endiv = document.createElement("div");
         entdiv = restaurant.ranRice();
         endiv.textContent=entdiv;
         entreeeeee.appendChild(endiv);
-        endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
+        endiv.classList.add("entrevevee", "mealprepdiv", "fs-4", "text-center", "col-sm");
     }
 }
 function vsadd(){
@@ -143,14 +143,14 @@ function vsadd(){
         var entdiv = restaurant.ranVnSa();
         endiv.textContent=entdiv;
         entreeeeee.appendChild(endiv);
-        endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
+        endiv.classList.add("entrevevee", "mealprepdiv", "fs-4", "text-center", "col-sm");
     }
     else{
         endiv = document.createElement("div");
         entdiv = restaurant.ranVnSa();
         endiv.textContent=entdiv;
         entreeeeee.appendChild(endiv);
-        endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
+        endiv.classList.add("entrevevee", "mealprepdiv", "fs-4", "text-center", "col-sm");
     }
 }
 function sfnadd(){
@@ -163,33 +163,33 @@ function sfnadd(){
         var entdiv = restaurant.ranSNoodle();
         endiv.textContent=entdiv;
         entreeeeee.appendChild(endiv);
-        endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
+        endiv.classList.add("entrevevee", "mealprepdiv", "fs-4", "text-center", "col-sm");
     }
     else{
         endiv = document.createElement("div");
         entdiv = restaurant.ranSNoodle();
         endiv.textContent=`${entdiv[0]} with a ${entdiv[1]} topping`;
         entreeeeee.appendChild(endiv);
-        endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
+        endiv.classList.add("entrevevee", "mealprepdiv", "fs-4", "text-center", "col-sm");
     }
 }
 function seanadd(){
     const entreeeeee=document.getElementById("entreeeeee");
     var a = document.getElementsByClassName("entrevevee");
-    if(a.length==2){
-        a[0].remove , a[1].remove;
+    if(a.length>=2){
+        a[0].remove() , a[1].remove();
         var endiv = document.createElement("div");
         var entdiv = restaurant.ranSENS();
         endiv.textContent=entdiv;
         entreeeeee.appendChild(endiv);
-        endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
+        endiv.classList.add("entrevevee", "mealprepdiv", "fs-4", "text-center", "col-sm");
     }
     else{
         endiv = document.createElement("div");
         entdiv = restaurant.ranSENS();
         endiv.textContent=entdiv;
         entreeeeee.appendChild(endiv);
-        endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
+        endiv.classList.add("entrevevee", "mealprepdiv", "fs-4", "text-center", "col-sm");
     }
 }
 function bevadd(){
@@ -201,14 +201,14 @@ function bevadd(){
         var bdivv = restaurant.ranBev();
         bediv.textContent=bdivv;
         drinkkk.appendChild(bediv);
-        bediv.classList.add("drinkik", "mealprepdiv", "col-sm");
+        bediv.classList.add("drinkik", "mealprepdiv", "fs-4", "text-center", "col-sm");
     }
     else{
         bediv = document.createElement("div");
         bdivv = restaurant.ranBev();
         bediv.textContent=bdivv;
         drinkkk.appendChild(bediv);
-        bediv.classList.add("drinkik", "mealprepdiv");
+        bediv.classList.add("drinkik", "mealprepdiv", "fs-4", "text-center");
     }
 }
 function smadd(){
@@ -220,14 +220,14 @@ function smadd(){
         var bdivv = restaurant.ranSmoo();
         bediv.textContent=bdivv + "smoothie";
         drinkkk.appendChild(bediv);
-        bediv.classList.add("drinkik", "mealprepdiv");
+        bediv.classList.add("drinkik", "mealprepdiv", "fs-4", "text-center");
     }
     else{
         bediv = document.createElement("div");
         bdivv = restaurant.ranSmoo();
-        bediv.textContent=bdivv + "smoothie";
+        bediv.textContent=bdivv + " smoothie";
         drinkkk.appendChild(bdivv);
-        bediv.classList.add("drinkik", "mealprepdiv");
+        bediv.classList.add("drinkik", "mealprepdiv", "fs-4", "text-center");
     }
 }
 function lbadd(){
@@ -239,13 +239,13 @@ function lbadd(){
         var ldivv = restaurant.ranLunch();
         ldiv.textContent=ldivv;
         lunchhh.appendChild(ldiv);
-        ldiv.classList.add("luncher", "mealprepdiv");
+        ldiv.classList.add("luncher", "mealprepdiv", "fs-4", "text-center");
     }
     else{
         ldiv = document.createElement("div");
         ldivv = restaurant.ranLunch();
         ldiv.textContent=ldivv;
         lunchhh.appendChild(ldiv);
-        ldiv.classList.add("luncher", "mealprepdiv");
+        ldiv.classList.add("luncher", "mealprepdiv", "fs-4", "text-center");
     }
 }
