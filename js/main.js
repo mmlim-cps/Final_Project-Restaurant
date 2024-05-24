@@ -64,33 +64,29 @@ var restaurant  = {
 const nav = document.getElementById("nav");
 const icon = document.getElementsByClassName("brand");
 var icon1 = icon[0];
-var icon2 = icon[1];
-var icon3 = icon[2];
 window.onscroll = function(){
     if(document.body.scrollTop>=30||document.documentElement.scrollTop>=30){
         nav.classList.add("nav-transparent");
         nav.classList.remove("nav-colored");
         icon1.src = "media/logo-sml.png";
-        icon2.src = "media/logo-sml.png";
-        icon3.src = "media/logo-sml.png";
-        //icon2.src = icon2.src.replace("media/logo-big-png", "media/logo-sml.png");
+
     }
     else{
         nav.classList.remove("nav-transparent");
         nav.classList.add("nav-colored");
-        icon1.src = "media/logo-big.png", icon2.src = "media/logo-big.png", icon3.src = "media/logo-big.png";
+        icon1.src = "media/logo-big.png";
     }
 }
 function appadd(){
     const appetttttt=document.getElementById("appetttttt")
     var y = document.getElementsByClassName("appetizz");
     if(y.length==1){
-        y.remove();
+        y[0].remove();
         var appdiv = document.createElement("div");
         var appetif = restaurant.ranAppe();
         appdiv.textContent=appetif;
         appetttttt.appendChild(appdiv);
-        appdiv.classList.add("mealprepdiv","appetizz");    
+        appdiv.classList.add("mealprepdiv","appetizz");
     }
     else{
         var appdiv = document.createElement("div");
@@ -100,7 +96,7 @@ function appadd(){
         appdiv.classList.add("mealprepdiv","appetizz");  
     }
 }
-function enadd(){
+function entadd(){
     const entreeeeee=document.getElementById("entreeeeee");
     var a = document.getElementsByClassName("entrevevee")
     if(a.length==2){
@@ -108,14 +104,14 @@ function enadd(){
         var endiv = document.createElement("div");
         var entdiv = restaurant.ranEnt();
         endiv.textContent=entdiv;
-        entreeeeee.appendChild("endiv");
+        entreeeeee.appendChild(endiv);
         endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
     }
     else{
         var endiv = document.createElement("div");
         var entdiv = restaurant.ranEnt();
         endiv.textContent=entdiv;
-        entreeeeee.appendChild("endiv");
+        entreeeeee.appendChild(endiv);
         endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
     }
 }
@@ -128,14 +124,14 @@ function friadd(){
         var endiv = document.createElement("div");
         var entdiv = restaurant.ranRice();
         endiv.textContent=entdiv;
-        entreeeeee.appendChild("endiv");
+        entreeeeee.appendChild(endiv);
         endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
     }
     else{
         var endiv = document.createElement("div");
         var entdiv = restaurant.ranRice();
         endiv.textContent=entdiv;
-        entreeeeee.appendChild("endiv");
+        entreeeeee.appendChild(endiv);
         endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
     }
 }
@@ -147,14 +143,14 @@ function vsadd(){
         var endiv = document.createElement("div");
         var entdiv = restaurant.ranVnSa();
         endiv.textContent=entdiv;
-        entreeeeee.appendChild("endiv");
+        entreeeeee.appendChild(endiv);
         endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
     }
     else{
         var endiv = document.createElement("div");
         var entdiv = restaurant.ranVnSa();
         endiv.textContent=entdiv;
-        entreeeeee.appendChild("endiv");
+        entreeeeee.appendChild(endiv);
         endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
     }
 }
@@ -166,14 +162,14 @@ function sfnadd(){
         var endiv = document.createElement("div");
         var entdiv = restaurant.ranSNoodle();
         endiv.textContent=entdiv;
-        entreeeeee.appendChild("endiv");
+        entreeeeee.appendChild(endiv);
         endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
     }
     else{
         var endiv = document.createElement("div");
         var entdiv = restaurant.ranSNoodle();
-        endiv.textContent=entdiv;
-        entreeeeee.appendChild("endiv");
+        endiv.textContent=entdiv[0] + " with a " + entdiv[1] + " topping";
+        entreeeeee.appendChild(endiv);
         endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
     }
 }
@@ -185,33 +181,71 @@ function seanadd(){
         var endiv = document.createElement("div");
         var entdiv = restaurant.ranSENS();
         endiv.textContent=entdiv;
-        entreeeeee.appendChild("endiv");
+        entreeeeee.appendChild(endiv);
         endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
     }
     else{
         var endiv = document.createElement("div");
         var entdiv = restaurant.ranSENS();
         endiv.textContent=entdiv;
-        entreeeeee.appendChild("endiv");
+        entreeeeee.appendChild(endiv);
         endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
     }
 }
 function bevadd(){
-    const entreeeeee=document.getElementById("drink");
+    const drinkkk=document.getElementById("drink");
     var a = document.getElementsByClassName("drinkik")
     if(a.length==1){
         a[0].remove
-        var endiv = document.createElement("div");
-        var entdiv = restaurant.ranBev;
-        endiv.textContent=entdiv;
-        entreeeeee.appendChild("endiv");
-        endiv.classList.add("drinkik", "mealprepdiv", "col-sm");
+        var bediv = document.createElement("div");
+        var bdivv = restaurant.ranBev();
+        bediv.textContent=bdiv;
+        drinkkkk.appendChild(bdivv);
+        bediv.classList.add("drinkik", "mealprepdiv", "col-sm");
     }
     else{
-        var endiv = document.createElement("div");
-        var entdiv = restaurant.ranBev;
-        endiv.textContent=entdiv;
-        entreeeeee.appendChild("endiv");
-        endiv.classList.add("drinkik", "mealprepdiv", "col-sm");
+        var bediv = document.createElement("div");
+        var bdivv = restaurant.ranBev();
+        bediv.textContent=bdivv;
+        drinkkkk.appendChild(bdivv);
+        bediv.classList.add("drinkik", "mealprepdiv");
+    }
+}
+function smadd(){
+    const drinkkk=document.getElementById("drink");
+    var a = document.getElementsByClassName("drinkik")
+    if(a.length==1){
+        a[0].remove
+        var bediv = document.createElement("div");
+        var bdivv = restaurant.ranSmoo();
+        bediv.textContent=bdivv;
+        drinkkk.appendChild(bdivv);
+        bediv.classList.add("drinkik", "mealprepdiv");
+    }
+    else{
+        var bediv = document.createElement("div");
+        var bdivv = restaurant.ranSmoo();
+        bediv.textContent=bdivv;
+        drinkkkk.appendChild(bdivv);
+        bediv.classList.add("drinkik", "mealprepdiv");
+    }
+}
+function lbadd(){
+    const lunchhh=document.getElementById("lunchhhhh");
+    var a = document.getElementsByClassName("luncher")
+    if(a.length==1){
+        a[0].remove
+        var ldiv = document.createElement("div");
+        var ldivv = restaurant.ranLunch();
+        ldiv.textContent=ldivv;
+        lunchhh.appendChild(ldiv);
+        ldiv.classList.add("luncher", "mealprepdiv");
+    }
+    else{
+        var ldiv = document.createElement("div");
+        var ldivv = restaurant.ranLunch();
+        ldiv.textContent=ldivv;
+        lunchhh.appendChild(ldiv);
+        ldiv.classList.add("luncher", "mealprepdiv");
     }
 }
