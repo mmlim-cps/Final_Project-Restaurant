@@ -100,7 +100,7 @@ function entadd(){
     const entreeeeee=document.getElementById("entreeeeee");
     var a = document.getElementsByClassName("entrevevee");
     if(a.length==2){
-        a[0].remove() , a[1].remove();
+        a[0].remove() , a[0].remove();
         var endiv = document.createElement("div");
         var entdiv = restaurant.ranEnt();
         endiv.textContent=entdiv;
@@ -119,7 +119,7 @@ function friadd(){
     const entreeeeee=document.getElementById("entreeeeee");
     var a = document.getElementsByClassName("entrevevee");
     if(a.length==2){
-        a[0].remove() , a[1].remove();
+        a[0].remove() , a[0].remove();
         var endiv = document.createElement("div");
         var entdiv = restaurant.ranRice();
         endiv.textContent=entdiv;
@@ -138,7 +138,7 @@ function vsadd(){
     const entreeeeee=document.getElementById("entreeeeee");
     var a = document.getElementsByClassName("entrevevee");
     if(a.length==2){
-        a[0].remove() , a[1].remove();
+        a[0].remove() , a[0].remove();
         var endiv = document.createElement("div");
         var entdiv = restaurant.ranVnSa();
         endiv.textContent=entdiv;
@@ -158,7 +158,7 @@ function sfnadd(){
     var a = document.getElementsByClassName("entrevevee");
     if(a.length==2){
         a[0].remove(); 
-        a[1].remove();
+        a[0].remove();
         var endiv = document.createElement("div");
         var entdiv = restaurant.ranSNoodle();
         endiv.textContent=entdiv;
@@ -177,7 +177,7 @@ function seanadd(){
     const entreeeeee=document.getElementById("entreeeeee");
     var a = document.getElementsByClassName("entrevevee");
     if(a.length>=2){
-        a[0].remove() , a[1].remove();
+        a[0].remove() , a[0].remove();
         var endiv = document.createElement("div");
         var entdiv = restaurant.ranSENS();
         endiv.textContent=entdiv;
@@ -218,7 +218,7 @@ function smadd(){
         a[0].remove();
         var bediv = document.createElement("div");
         var bdivv = restaurant.ranSmoo();
-        bediv.textContent=bdivv + "smoothie";
+        bediv.textContent=bdivv + " smoothie";
         drinkkk.appendChild(bediv);
         bediv.classList.add("drinkik", "mealprepdiv", "fs-4", "text-center");
     }
@@ -226,7 +226,7 @@ function smadd(){
         bediv = document.createElement("div");
         bdivv = restaurant.ranSmoo();
         bediv.textContent=bdivv + " smoothie";
-        drinkkk.appendChild(bdivv);
+        drinkkk.appendChild(bediv);
         bediv.classList.add("drinkik", "mealprepdiv", "fs-4", "text-center");
     }
 }
