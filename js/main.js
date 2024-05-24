@@ -100,7 +100,7 @@ function entadd(){
     const entreeeeee=document.getElementById("entreeeeee");
     var a = document.getElementsByClassName("entrevevee")
     if(a.length==2){
-        a[0].remove , a[1].remove;
+        a[0].remove() , a[1].remove();
         var endiv = document.createElement("div");
         var entdiv = restaurant.ranEnt();
         endiv.textContent=entdiv;
@@ -115,12 +115,11 @@ function entadd(){
         endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
     }
 }
-
 function friadd(){
     const entreeeeee=document.getElementById("entreeeeee");
     var a = document.getElementsByClassName("entrevevee")
     if(a.length==2){
-        a[0].remove , a[1].remove;
+        a[0].remove() , a[1].remove();
         var endiv = document.createElement("div");
         var entdiv = restaurant.ranRice();
         endiv.textContent=entdiv;
@@ -139,7 +138,7 @@ function vsadd(){
     const entreeeeee=document.getElementById("entreeeeee");
     var a = document.getElementsByClassName("entrevevee")
     if(a.length==2){
-        a[0].remove , a[1].remove;
+        a[0].remove() , a[1].remove();
         var endiv = document.createElement("div");
         var entdiv = restaurant.ranVnSa();
         endiv.textContent=entdiv;
@@ -158,7 +157,8 @@ function sfnadd(){
     const entreeeeee=document.getElementById("entreeeeee");
     var a = document.getElementsByClassName("entrevevee")
     if(a.length==2){
-        a[0].remove , a[1].remove;
+        a[0].remove(); 
+        a[1].remove();
         var endiv = document.createElement("div");
         var entdiv = restaurant.ranSNoodle();
         endiv.textContent=entdiv;
@@ -168,7 +168,7 @@ function sfnadd(){
     else{
         var endiv = document.createElement("div");
         var entdiv = restaurant.ranSNoodle();
-        endiv.textContent=entdiv[0] + " with a " + entdiv[1] + " topping";
+        endiv.textContent=`${entdiv[0]} with a ${entdiv[1]} topping`;
         entreeeeee.appendChild(endiv);
         endiv.classList.add("entrevevee", "mealprepdiv", "col-sm");
     }
@@ -196,18 +196,18 @@ function bevadd(){
     const drinkkk=document.getElementById("drink");
     var a = document.getElementsByClassName("drinkik")
     if(a.length==1){
-        a[0].remove
+        a[0].remove();
         var bediv = document.createElement("div");
         var bdivv = restaurant.ranBev();
-        bediv.textContent=bdiv;
-        drinkkkk.appendChild(bdivv);
+        bediv.textContent=bdivv;
+        drinkkk.appendChild(bediv);
         bediv.classList.add("drinkik", "mealprepdiv", "col-sm");
     }
     else{
         var bediv = document.createElement("div");
         var bdivv = restaurant.ranBev();
         bediv.textContent=bdivv;
-        drinkkkk.appendChild(bdivv);
+        drinkkk.appendChild(bediv);
         bediv.classList.add("drinkik", "mealprepdiv");
     }
 }
@@ -215,18 +215,18 @@ function smadd(){
     const drinkkk=document.getElementById("drink");
     var a = document.getElementsByClassName("drinkik")
     if(a.length==1){
-        a[0].remove
+        a[0].remove()
         var bediv = document.createElement("div");
         var bdivv = restaurant.ranSmoo();
         bediv.textContent=bdivv;
-        drinkkk.appendChild(bdivv);
+        drinkkk.appendChild(bediv);
         bediv.classList.add("drinkik", "mealprepdiv");
     }
     else{
         var bediv = document.createElement("div");
         var bdivv = restaurant.ranSmoo();
         bediv.textContent=bdivv;
-        drinkkkk.appendChild(bdivv);
+        drinkkk.appendChild(bdivv);
         bediv.classList.add("drinkik", "mealprepdiv");
     }
 }
@@ -234,7 +234,7 @@ function lbadd(){
     const lunchhh=document.getElementById("lunchhhhh");
     var a = document.getElementsByClassName("luncher")
     if(a.length==1){
-        a[0].remove
+        a[0].remove()
         var ldiv = document.createElement("div");
         var ldivv = restaurant.ranLunch();
         ldiv.textContent=ldivv;
