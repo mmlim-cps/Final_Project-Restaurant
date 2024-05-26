@@ -96,3 +96,30 @@ img{
 button{
     margin:3px;
 }
+/*fonts*/
+.delius-swash-caps-regular {
+    font-family: "Delius Swash Caps", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.original-surfer-regular {
+    font-family: "Original Surfer", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.galrow1{
+    width:28.2993%;
+    height:16.1547%;
+    object-fit:cover;
+}
+.borel-regular {
+    font-family: "Borel", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.mynerve-regular {
+    font-family: "Mynerve", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+   

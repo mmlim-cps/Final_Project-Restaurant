@@ -161,14 +161,14 @@ function sfnadd(){
         a[0].remove();
         var endiv = document.createElement("div");
         var entdiv = restaurant.ranSNoodle();
-        endiv.textContent=entdiv;
+        endiv.textContent = entdiv[0] + " with a " + entdiv[1] + " topping";
         entreeeeee.appendChild(endiv);
         endiv.classList.add("entrevevee", "mealprepdiv", "fs-4", "text-center", "col-sm");
     }
     else{
         endiv = document.createElement("div");
         entdiv = restaurant.ranSNoodle();
-        endiv.textContent=`${entdiv[0]} with a ${entdiv[1]} topping`;
+        endiv.textContent = entdiv[0] + " with a " + entdiv[1] + " topping";
         entreeeeee.appendChild(endiv);
         endiv.classList.add("entrevevee", "mealprepdiv", "fs-4", "text-center", "col-sm");
     }
