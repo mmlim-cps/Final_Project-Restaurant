@@ -90,11 +90,15 @@ img{
 }
 #mealPrep{
     background-color:#7B221C;
-    height:200px;
+    height:150px;
     width:auto;
 }
 button{
     margin:3px;
+}
+.textbox{
+    color:white;
+    font-size:80px;
 }
 /*fonts*/
 .delius-swash-caps-regular {
@@ -131,16 +135,4 @@ button{
     font-family: "Inria Serif", serif;
     font-weight: 700;
     font-style: normal;
-}
-.logocol{
-    position:absolute;
-}
-.divwithdivdivdiv{
-    width:20.86734rem;
-    height:100px;
-    position:absolute;
-    bottom:0px;
-}
-.texbox{
-    color:white;
 }

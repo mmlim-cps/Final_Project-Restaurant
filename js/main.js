@@ -77,27 +77,6 @@ window.onscroll = function(){
         icon1.src = "media/logo-big.png";
     }
 };
-/*
-function appadd(){
-    var appetttttt=document.getElementById("appetttttt");
-    var y = document.getElementsByClassName("appetizz");
-    if(y.length==1){
-        y[0].remove();
-        var appdiv = document.createElement("div");
-        var appetif = restaurant.ranAppe();
-        appdiv.textContent=appetif;
-        appetttttt.appendChild(appdiv);
-        appdiv.classList.add("mealprepdiv", "fs-4", "text-center","appetizz");
-    }
-    else{
-        var appdiv2 = document.createElement("div");
-        var appetif2 = restaurant.ranAppe();
-        appdiv2.textContent=appetif2;
-        appetttttt.appendChild(appdiv2);
-        appdiv2.classList.add("mealprepdiv", "fs-4", "text-center","appetizz");  
-    }
-};
-*/
 function appadd(){
     var appetttttt=document.getElementById("appetttttt");
     var y = document.getElementsByClassName("appetizz");
@@ -215,7 +194,7 @@ function bevadd(){
         a[0].remove();
         bediv.textContent=bdivv;
         drinkkk.appendChild(bediv);
-        bediv.classList.add("drinkik", "mealprepdiv", "fs-4", "text-center", "col-sm");
+        bediv.classList.add("drinkik", "mealprepdiv", "fs-4", "text-center");
     }
     else{
         bediv.textContent=bdivv;
