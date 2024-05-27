@@ -80,17 +80,16 @@ img{
 }
 .reviewbg{
     background-color:#D10D1D;
-    height:15rem;
+    height:20rem;
 }
 .mealprepdiv{
-    height:150px;
-    background-color:#7B221C;
     color:white;
 }
 .inlinee{
     display:inline;
 }
 .mealPrep{
+    background-color:#7B221C;
     height:200px;
 }
 button{
@@ -108,8 +107,8 @@ button{
     font-style: normal;
 }
 .galrow1{
-    width:28.2993%;
-    height:16.1547%;
+    width:28.2993rem;
+    height:16.1547rem;
     object-fit:cover;
 }
 .borel-regular {
@@ -122,4 +121,15 @@ button{
     font-weight: 400;
     font-style: normal;
 }
+.inria-serif-regular {
+    font-family: "Inria Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.inria-serif-bold {
+    font-family: "Inria Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
    
