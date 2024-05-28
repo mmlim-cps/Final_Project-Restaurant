@@ -87,12 +87,12 @@ function appadd(){
         
         appdiv.textContent=appetif;
         appetttttt.appendChild(appdiv);
-        appdiv.classList.add("mealprepdiv", "fs-4", "text-center","appetizz");
+        appdiv.classList.add("mealprepdiv", "vollkorn", "fs-4", "text-center","appetizz");
     }
     else{
         appdiv.textContent=appetif;
         appetttttt.appendChild(appdiv);
-        appdiv.classList.add("mealprepdiv", "fs-4", "text-center","appetizz");  
+        appdiv.classList.add("mealprepdiv", "vollkorn", "fs-4", "text-center","appetizz");  
     }
 }
 function entadd(){
@@ -105,12 +105,12 @@ function entadd(){
         a[0].remove();  
         endiv.textContent=entdiv;
         entreeeeee.appendChild(endiv);
-        endiv.classList.add("entrevevee", "mealprepdiv", "fs-4", "text-center", "col-sm");
+        endiv.classList.add("entrevevee", "mealprepdiv", "vollkorn", "fs-4", "text-center", "col-sm");
     }
     else{
         endiv.textContent=entdiv;
         entreeeeee.appendChild(endiv);
-        endiv.classList.add("entrevevee", "mealprepdiv", "fs-4", "text-center", "col-sm");
+        endiv.classList.add("entrevevee", "mealprepdiv", "vollkorn", "fs-4", "text-center", "col-sm");
     }
 }
 function friadd(){
@@ -123,12 +123,12 @@ function friadd(){
         a[0].remove();
         endiv.textContent=entdiv;
         entreeeeee.appendChild(endiv);
-        endiv.classList.add("entrevevee", "mealprepdiv", "fs-4", "text-center", "col-sm");
+        endiv.classList.add("entrevevee", "mealprepdiv", "vollkorn", "fs-4", "text-center", "col-sm");
     }
     else{
         endiv.textContent=entdiv;
         entreeeeee.appendChild(endiv);
-        endiv.classList.add("entrevevee", "mealprepdiv", "fs-4", "text-center", "col-sm");
+        endiv.classList.add("entrevevee", "mealprepdiv", "vollkorn", "fs-4", "text-center", "col-sm");
     }
 }
 function vsadd(){
@@ -141,12 +141,12 @@ function vsadd(){
         a[0].remove();
         endiv.textContent=entdiv;
         entreeeeee.appendChild(endiv);
-        endiv.classList.add("entrevevee", "mealprepdiv", "fs-4", "text-center", "col-sm");
+        endiv.classList.add("entrevevee", "mealprepdiv", "vollkorn", "fs-4", "text-center", "col-sm");
     }
     else{
         endiv.textContent=entdiv;
         entreeeeee.appendChild(endiv);
-        endiv.classList.add("entrevevee", "mealprepdiv", "fs-4", "text-center", "col-sm");
+        endiv.classList.add("entrevevee", "mealprepdiv", "vollkorn", "fs-4", "text-center", "col-sm");
     }
 }
 function sfnadd(){
@@ -159,12 +159,12 @@ function sfnadd(){
         a[0].remove();
         endiv.textContent = entdiv[0] + " with a " + entdiv[1] + " topping";
         entreeeeee.appendChild(endiv);
-        endiv.classList.add("entrevevee", "mealprepdiv", "fs-4", "text-center", "col-sm");
+        endiv.classList.add("entrevevee", "mealprepdiv", "vollkorn", "fs-4", "text-center", "col-sm");
     }
     else{
         endiv.textContent = entdiv[0] + " with a " + entdiv[1] + " topping";
         entreeeeee.appendChild(endiv);
-        endiv.classList.add("entrevevee", "mealprepdiv", "fs-4", "text-center", "col-sm");
+        endiv.classList.add("entrevevee", "mealprepdiv", "vollkorn", "fs-4", "text-center", "col-sm");
     }
 }
 function seanadd(){
@@ -177,12 +177,12 @@ function seanadd(){
         a[0].remove();
         endiv.textContent=entdiv;
         entreeeeee.appendChild(endiv);
-        endiv.classList.add("entrevevee", "mealprepdiv", "fs-4", "text-center", "col-sm");
+        endiv.classList.add("entrevevee", "mealprepdiv", "vollkorn", "fs-4", "text-center", "col-sm");
     }
     else{
         endiv.textContent=entdiv;
         entreeeeee.appendChild(endiv);
-        endiv.classList.add("entrevevee", "mealprepdiv", "fs-4", "text-center", "col-sm");
+        endiv.classList.add("entrevevee", "mealprepdiv", "vollkorn", "fs-4", "text-center", "col-sm");
     }
 }
 function bevadd(){
@@ -194,12 +194,12 @@ function bevadd(){
         a[0].remove();
         bediv.textContent=bdivv;
         drinkkk.appendChild(bediv);
-        bediv.classList.add("drinkik", "mealprepdiv", "fs-4", "text-center");
+        bediv.classList.add("drinkik", "mealprepdiv", "vollkorn", "fs-4", "text-center");
     }
     else{
         bediv.textContent=bdivv;
         drinkkk.appendChild(bediv);
-        bediv.classList.add("drinkik", "mealprepdiv", "fs-4", "text-center");
+        bediv.classList.add("drinkik", "mealprepdiv", "vollkorn", "fs-4", "text-center");
     }
 }
 function smadd(){
@@ -212,12 +212,12 @@ function smadd(){
         
         bediv.textContent=bdivv + " smoothie";
         drinkkk.appendChild(bediv);
-        bediv.classList.add("drinkik", "mealprepdiv", "fs-4", "text-center");
+        bediv.classList.add("drinkik", "mealprepdiv", "vollkorn", "fs-4", "text-center");
     }
     else{
         bediv.textContent=bdivv + " smoothie";
         drinkkk.appendChild(bediv);
-        bediv.classList.add("drinkik", "mealprepdiv", "fs-4", "text-center");
+        bediv.classList.add("drinkik", "mealprepdiv", "vollkorn", "fs-4", "text-center");
     }
 }
 function lbadd(){
@@ -230,11 +230,11 @@ function lbadd(){
         
         ldiv.textContent=ldivv;
         lunchhh.appendChild(ldiv);
-        ldiv.classList.add("luncher", "mealprepdiv", "fs-4", "text-center");
+        ldiv.classList.add("luncher", "mealprepdiv", "vollkorn", "fs-4", "text-center");
     }
     else{
         ldiv.textContent=ldivv;
         lunchhh.appendChild(ldiv);
-        ldiv.classList.add("luncher", "mealprepdiv", "fs-4", "text-center");
+        ldiv.classList.add("luncher", "mealprepdiv", "vollkorn", "fs-4", "text-center");
     }
 }

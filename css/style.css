@@ -18,17 +18,11 @@
     height:100px;
 }
 body{
-    position:relative;
+    background-color: #feecba;
 }
-body::after {
-    content: '';
-    display: block;
-    height: 210px;
-}
+
 footer{
-    position:absolute;
-    bottom:0px;
-    padding-top:3px;
+    padding-top:5px;
     border-top:#381c13 double 4px;
     width:90%;
     height: 200px;
@@ -100,6 +94,11 @@ button{
     color:white;
     font-size:80px;
 }
+.galrow1{
+    width:28.2993rem;
+    height:16.1547rem;
+    object-fit:cover;
+}
 /*fonts*/
 .delius-swash-caps-regular {
     font-family: "Delius Swash Caps", cursive;
@@ -111,11 +110,7 @@ button{
     font-weight: 400;
     font-style: normal;
 }
-.galrow1{
-    width:28.2993rem;
-    height:16.1547rem;
-    object-fit:cover;
-}
+
 .borel-regular {
     font-family: "Borel", cursive;
     font-weight: 400;
@@ -135,4 +130,11 @@ button{
     font-family: "Inria Serif", serif;
     font-weight: 700;
     font-style: normal;
+}
+
+.vollkorn{
+  font-family: "Vollkorn", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
