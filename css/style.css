@@ -68,7 +68,7 @@ img{
     text-indent:50px;
 }
 .footerlogo{
-    width:11.736rem; /*THIS SI FOR FOROTER CLOGO*/
+    width:11.736rem;
 }
 .reviewbg{
     background-color:#D10D1D;
@@ -145,7 +145,6 @@ button{
     font-weight: 700;
     font-style: normal;
 }
-
 .vollkorn{
   font-family: "Vollkorn", serif;
   font-optical-sizing: auto;
