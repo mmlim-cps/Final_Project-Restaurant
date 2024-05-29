@@ -20,11 +20,9 @@
 body{
     background-color: #feecba;
 }
-
 footer{
     padding-top:5px;
     border-top:#381c13 double 4px;
-    width:90%;
     height: 200px;
 }
 .nav-link:hover{
@@ -86,6 +84,7 @@ img{
     background-color:#7B221C;
     height:150px;
     width:auto;
+    border-top:white solid 3px;
 }
 button{
     margin:3px;
@@ -98,6 +97,21 @@ button{
     width:28.2993rem;
     height:16.1547rem;
     object-fit:cover;
+}
+.copyright{
+    font-size:20px;
+}
+#abouthead{
+    margin-top:80px;
+}
+#aboutlink{
+    font-size:110px;
+}
+#galleryhead{
+    margin-top:85px;
+}
+#gallerylink{
+    font-size:80px;
 }
 /*fonts*/
 .delius-swash-caps-regular {
