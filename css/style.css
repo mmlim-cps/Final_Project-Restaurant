@@ -113,6 +113,10 @@ button{
 #gallerylink{
     font-size:80px;
 }
+.titlerow{
+    border-top:10px double #FCC532;
+    border-bottom:10px double #FF9505;
+}
 /*fonts*/
 .delius-swash-caps-regular {
     font-family: "Delius Swash Caps", cursive;
