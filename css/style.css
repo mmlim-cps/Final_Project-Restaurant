@@ -119,11 +119,7 @@ button{
 }
 .logowithcar{
     height:20rem;
-    transition-timing-function: ease-in;
     box-shadow: 0px 0px 10px 15px black;
-}
-.logowithcar:hover{
-    height:30rem;
 }
 /*fonts*/
 .delius-swash-caps-regular {
