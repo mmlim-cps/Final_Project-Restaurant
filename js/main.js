@@ -172,7 +172,7 @@ function seanadd(){
     var a = document.getElementsByClassName("entrevevee");
     var endiv = document.createElement("div");
     var entdiv = restaurant.ranSENS();
-    if(a.length>=2){
+    if(a.length==2){
         a[0].remove();
         a[0].remove();
         endiv.textContent=entdiv;
