@@ -128,8 +128,8 @@ button{
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100em;
-    width: 100em;
+    height: 50em;
+    width: 50em;
     opacity: 0;
     transition: .5s ease;
     background-color: #FF9505;
